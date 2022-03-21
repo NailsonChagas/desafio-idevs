@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+    Escreva um algoritmo que mostre todos os números n menores que 10.000, onde n e n + 1 possuem o mesmo número de divisores. 
+*/
+
 public class Desafio2 {
     static int divisores(int num){
         int cont = 0;
