@@ -14,8 +14,16 @@ Nailson Francisco da Silva Chagas
             </ul>
     </li>
     <li><b>Para executar</b>: <br>
-        java -jar "nome_do_desafio".jar / ex: java -jar desafio1.jar<br>
-        <b>ou</b><br>
-        java "Nome_do_desafio" / ex: java Desafio2
+        <ul>
+            <li>java -jar "nome_do_desafio".jar / ex: java -jar desafio1.jar</li>
+            <b>ou</b>
+            <li>
+                <ul>
+                    <li>javac "Nome_do_desafio".java</li>
+                    <li>java "Nome_do_desafio"</li>
+                    ex: javac Desafio2.java  / java Desafio2
+                </ul>
+            </li>
+        </ul>
     </li>
 </ul>
