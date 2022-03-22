@@ -39,9 +39,10 @@ public class Desafio1 {
         for(int i = 0; i < word.length(); i++){
             char character = word.charAt(i);
 
-            for(Map.Entry<String, Integer> set : dictionary.entrySet()){
+            for(Map.Entry<String, Integer> set : dictionary.entrySet()){// itera o hashmap e verifica se o character pertence ao set 
                 if(set.getKey().contains(Character.toString(character))){
                     score += set.getValue();
+                    break;// se achado a pontuação do character sair desse loop e ir para proximo character
                 }
             }
 

@@ -15,13 +15,13 @@ import java.util.Scanner;
 public class Desafio3 {
     static boolean prime_check(int num){
         for(int i = 2; i < num; i++){
-            if(num % i == 0){
+            if(num % i == 0){ //se divisivel por um número que não seja ele mesmo é primo
                 return false;
             }
         }
         return true;
     }
-    static int list_sum(List<Integer> list, int slice_lenght){
+    static int list_sum(List<Integer> list, int slice_lenght){//soma dos n (slice_lenght) elementos de uma lista
         int sum = 0;
         for(int i=0; i<slice_lenght; i++){
             sum += list.get(i);
@@ -42,9 +42,9 @@ public class Desafio3 {
             }
         }
 
-        for(int i = prime_list.size(); i > 0; i--){
+        for(int i = prime_list.size(); i > 0; i--){// começa do maior (final da lista) indo até o menor (inicio da lista)
             int aux = list_sum(prime_list, i);
-            if(aux <= num && prime_check(aux)){
+            if(aux <= num && prime_check(aux)){// se menor que num e for primo imprimir e sair da iteração
                 System.out.println("Maior num <= " + num + " obtido através da soma consecutiva de num primos é: " + aux);
                 break;
             }
