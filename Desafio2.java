@@ -29,6 +29,6 @@ public class Desafio2 {
             }
         }
 
-        System.out.println(list.toString());
+        System.out.println(list.toString()); //imprimindo a lista com todos os números n em que n e n + 1 possuem o mesmo número de divisores
     }
 }
