@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Desafio3 {
     static boolean prime_check(int num){
         for(int i = 2; i < num; i++){
-            if(num % i == 0){ //se divisivel por um número que não seja ele mesmo é primo
+            if(num % i == 0){ //se divisivel por um número que não seja ele mesmo n é primo
                 return false;
             }
         }
